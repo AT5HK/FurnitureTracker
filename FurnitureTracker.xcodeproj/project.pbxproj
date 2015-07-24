@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50DADD471B62B9B2002873C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD461B62B9B2002873C7 /* main.m */; };
+		50DADD4A1B62B9B2002873C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD491B62B9B2002873C7 /* AppDelegate.m */; };
+		50DADD4D1B62B9B2002873C7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD4C1B62B9B2002873C7 /* MasterViewController.m */; };
+		50DADD501B62B9B2002873C7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD4F1B62B9B2002873C7 /* DetailViewController.m */; };
+		50DADD531B62B9B2002873C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DADD511B62B9B2002873C7 /* Main.storyboard */; };
+		50DADD551B62B9B2002873C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DADD541B62B9B2002873C7 /* Images.xcassets */; };
+		50DADD581B62B9B2002873C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DADD561B62B9B2002873C7 /* LaunchScreen.xib */; };
+		50DADD641B62B9B2002873C7 /* FurnitureTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD631B62B9B2002873C7 /* FurnitureTrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50DADD5E1B62B9B2002873C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50DADD391B62B9B1002873C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50DADD401B62B9B2002873C7;
+			remoteInfo = FurnitureTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50DADD411B62B9B2002873C7 /* FurnitureTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurnitureTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DADD451B62B9B2002873C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DADD461B62B9B2002873C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50DADD481B62B9B2002873C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50DADD491B62B9B2002873C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50DADD4B1B62B9B2002873C7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		50DADD4C1B62B9B2002873C7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		50DADD4E1B62B9B2002873C7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		50DADD4F1B62B9B2002873C7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		50DADD521B62B9B2002873C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50DADD541B62B9B2002873C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50DADD571B62B9B2002873C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		50DADD5D1B62B9B2002873C7 /* FurnitureTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DADD621B62B9B2002873C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DADD631B62B9B2002873C7 /* FurnitureTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FurnitureTrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50DADD3E1B62B9B2002873C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DADD5A1B62B9B2002873C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50DADD381B62B9B1002873C7 = {
+			isa = PBXGroup;
+			children = (
+				50DADD431B62B9B2002873C7 /* FurnitureTracker */,
+				50DADD601B62B9B2002873C7 /* FurnitureTrackerTests */,
+				50DADD421B62B9B2002873C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50DADD421B62B9B2002873C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD411B62B9B2002873C7 /* FurnitureTracker.app */,
+				50DADD5D1B62B9B2002873C7 /* FurnitureTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50DADD431B62B9B2002873C7 /* FurnitureTracker */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD481B62B9B2002873C7 /* AppDelegate.h */,
+				50DADD491B62B9B2002873C7 /* AppDelegate.m */,
+				50DADD4B1B62B9B2002873C7 /* MasterViewController.h */,
+				50DADD4C1B62B9B2002873C7 /* MasterViewController.m */,
+				50DADD4E1B62B9B2002873C7 /* DetailViewController.h */,
+				50DADD4F1B62B9B2002873C7 /* DetailViewController.m */,
+				50DADD511B62B9B2002873C7 /* Main.storyboard */,
+				50DADD541B62B9B2002873C7 /* Images.xcassets */,
+				50DADD561B62B9B2002873C7 /* LaunchScreen.xib */,
+				50DADD441B62B9B2002873C7 /* Supporting Files */,
+			);
+			path = FurnitureTracker;
+			sourceTree = "<group>";
+		};
+		50DADD441B62B9B2002873C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD451B62B9B2002873C7 /* Info.plist */,
+				50DADD461B62B9B2002873C7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50DADD601B62B9B2002873C7 /* FurnitureTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD631B62B9B2002873C7 /* FurnitureTrackerTests.m */,
+				50DADD611B62B9B2002873C7 /* Supporting Files */,
+			);
+			path = FurnitureTrackerTests;
+			sourceTree = "<group>";
+		};
+		50DADD611B62B9B2002873C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD621B62B9B2002873C7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50DADD401B62B9B2002873C7 /* FurnitureTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DADD671B62B9B2002873C7 /* Build configuration list for PBXNativeTarget "FurnitureTracker" */;
+			buildPhases = (
+				50DADD3D1B62B9B2002873C7 /* Sources */,
+				50DADD3E1B62B9B2002873C7 /* Frameworks */,
+				50DADD3F1B62B9B2002873C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FurnitureTracker;
+			productName = FurnitureTracker;
+			productReference = 50DADD411B62B9B2002873C7 /* FurnitureTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50DADD5C1B62B9B2002873C7 /* FurnitureTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DADD6A1B62B9B2002873C7 /* Build configuration list for PBXNativeTarget "FurnitureTrackerTests" */;
+			buildPhases = (
+				50DADD591B62B9B2002873C7 /* Sources */,
+				50DADD5A1B62B9B2002873C7 /* Frameworks */,
+				50DADD5B1B62B9B2002873C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50DADD5F1B62B9B2002873C7 /* PBXTargetDependency */,
+			);
+			name = FurnitureTrackerTests;
+			productName = FurnitureTrackerTests;
+			productReference = 50DADD5D1B62B9B2002873C7 /* FurnitureTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50DADD391B62B9B1002873C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ASolo;
+				TargetAttributes = {
+					50DADD401B62B9B2002873C7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					50DADD5C1B62B9B2002873C7 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 50DADD401B62B9B2002873C7;
+					};
+				};
+			};
+			buildConfigurationList = 50DADD3C1B62B9B1002873C7 /* Build configuration list for PBXProject "FurnitureTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50DADD381B62B9B1002873C7;
+			productRefGroup = 50DADD421B62B9B2002873C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50DADD401B62B9B2002873C7 /* FurnitureTracker */,
+				50DADD5C1B62B9B2002873C7 /* FurnitureTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50DADD3F1B62B9B2002873C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DADD531B62B9B2002873C7 /* Main.storyboard in Resources */,
+				50DADD581B62B9B2002873C7 /* LaunchScreen.xib in Resources */,
+				50DADD551B62B9B2002873C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DADD5B1B62B9B2002873C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50DADD3D1B62B9B2002873C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DADD4A1B62B9B2002873C7 /* AppDelegate.m in Sources */,
+				50DADD4D1B62B9B2002873C7 /* MasterViewController.m in Sources */,
+				50DADD471B62B9B2002873C7 /* main.m in Sources */,
+				50DADD501B62B9B2002873C7 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DADD591B62B9B2002873C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DADD641B62B9B2002873C7 /* FurnitureTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50DADD5F1B62B9B2002873C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50DADD401B62B9B2002873C7 /* FurnitureTracker */;
+			targetProxy = 50DADD5E1B62B9B2002873C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50DADD511B62B9B2002873C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50DADD521B62B9B2002873C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50DADD561B62B9B2002873C7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50DADD571B62B9B2002873C7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50DADD651B62B9B2002873C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50DADD661B62B9B2002873C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50DADD681B62B9B2002873C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FurnitureTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50DADD691B62B9B2002873C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FurnitureTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50DADD6B1B62B9B2002873C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FurnitureTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurnitureTracker.app/FurnitureTracker";
+			};
+			name = Debug;
+		};
+		50DADD6C1B62B9B2002873C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FurnitureTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FurnitureTracker.app/FurnitureTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50DADD3C1B62B9B1002873C7 /* Build configuration list for PBXProject "FurnitureTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DADD651B62B9B2002873C7 /* Debug */,
+				50DADD661B62B9B2002873C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50DADD671B62B9B2002873C7 /* Build configuration list for PBXNativeTarget "FurnitureTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DADD681B62B9B2002873C7 /* Debug */,
+				50DADD691B62B9B2002873C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50DADD6A1B62B9B2002873C7 /* Build configuration list for PBXNativeTarget "FurnitureTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DADD6B1B62B9B2002873C7 /* Debug */,
+				50DADD6C1B62B9B2002873C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50DADD391B62B9B1002873C7 /* Project object */;
+}
