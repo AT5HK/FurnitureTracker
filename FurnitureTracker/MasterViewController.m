@@ -8,10 +8,16 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "Room.h"
+#import <Realm/Realm.h>
 
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
+@property (nonatomic) UITextField *textField;
+@property RLMResults *allRooms;
+@property RLMRealm *realm;
+
 @end
 
 @implementation MasterViewController
@@ -27,29 +33,46 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Get the default Realm
+    self.realm = [RLMRealm defaultRealm];
+    self.allRooms = [Room allObjects];
 }
 
 - (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Add Room" message:@"Name the room you want to add" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *save = [UIAlertAction actionWithTitle:@"save" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //persist data
+        // Create object
+        Room *room = [[Room alloc] init];
+        room.name = self.textField.text;
+        
+        // You only need to do this once (per thread)
+        
+        // Add to Realm with transaction
+        [self.realm transactionWithBlock:^{
+            [self.realm addObject:room];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }];
+        [self.tableView reloadData];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        self.textField = textField;
+    }];
+    [alert addAction:save];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"DetailViewController"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        Room *RLMobject = self.allRooms[indexPath.row];
+        [[segue destinationViewController] setRoomDetailItem:RLMobject];
     }
 }
 
@@ -60,14 +83,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return self.allRooms.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Room *roomObject = self.allRooms[indexPath.row];
+    cell.textLabel.text = roomObject.name;
     return cell;
 }
 
@@ -84,5 +107,7 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
+
+#pragma mark - helper methods
 
 @end

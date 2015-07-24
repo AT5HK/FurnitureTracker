@@ -15,6 +15,10 @@
 		50DADD551B62B9B2002873C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DADD541B62B9B2002873C7 /* Images.xcassets */; };
 		50DADD581B62B9B2002873C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DADD561B62B9B2002873C7 /* LaunchScreen.xib */; };
 		50DADD641B62B9B2002873C7 /* FurnitureTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD631B62B9B2002873C7 /* FurnitureTrackerTests.m */; };
+		50DADD6E1B62BA99002873C7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DADD6D1B62BA99002873C7 /* Realm.framework */; };
+		50DADD701B62BAB3002873C7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DADD6F1B62BAB3002873C7 /* libc++.dylib */; };
+		50DADD731B62BC6F002873C7 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD721B62BC6F002873C7 /* Room.m */; };
+		50DADD761B62BC7E002873C7 /* Furniture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD751B62BC7E002873C7 /* Furniture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,12 @@
 		50DADD5D1B62B9B2002873C7 /* FurnitureTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DADD621B62B9B2002873C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50DADD631B62B9B2002873C7 /* FurnitureTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FurnitureTrackerTests.m; sourceTree = "<group>"; };
+		50DADD6D1B62BA99002873C7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		50DADD6F1B62BAB3002873C7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		50DADD711B62BC6F002873C7 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		50DADD721B62BC6F002873C7 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		50DADD741B62BC7E002873C7 /* Furniture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Furniture.h; sourceTree = "<group>"; };
+		50DADD751B62BC7E002873C7 /* Furniture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Furniture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DADD701B62BAB3002873C7 /* libc++.dylib in Frameworks */,
+				50DADD6E1B62BA99002873C7 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,8 @@
 		50DADD381B62B9B1002873C7 = {
 			isa = PBXGroup;
 			children = (
+				50DADD6F1B62BAB3002873C7 /* libc++.dylib */,
+				50DADD6D1B62BA99002873C7 /* Realm.framework */,
 				50DADD431B62B9B2002873C7 /* FurnitureTracker */,
 				50DADD601B62B9B2002873C7 /* FurnitureTrackerTests */,
 				50DADD421B62B9B2002873C7 /* Products */,
@@ -90,6 +104,10 @@
 				50DADD4C1B62B9B2002873C7 /* MasterViewController.m */,
 				50DADD4E1B62B9B2002873C7 /* DetailViewController.h */,
 				50DADD4F1B62B9B2002873C7 /* DetailViewController.m */,
+				50DADD711B62BC6F002873C7 /* Room.h */,
+				50DADD721B62BC6F002873C7 /* Room.m */,
+				50DADD741B62BC7E002873C7 /* Furniture.h */,
+				50DADD751B62BC7E002873C7 /* Furniture.m */,
 				50DADD511B62B9B2002873C7 /* Main.storyboard */,
 				50DADD541B62B9B2002873C7 /* Images.xcassets */,
 				50DADD561B62B9B2002873C7 /* LaunchScreen.xib */,
@@ -224,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DADD761B62BC7E002873C7 /* Furniture.m in Sources */,
+				50DADD731B62BC6F002873C7 /* Room.m in Sources */,
 				50DADD4A1B62B9B2002873C7 /* AppDelegate.m in Sources */,
 				50DADD4D1B62B9B2002873C7 /* MasterViewController.m in Sources */,
 				50DADD471B62B9B2002873C7 /* main.m in Sources */,
@@ -353,6 +373,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FurnitureTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +387,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FurnitureTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
